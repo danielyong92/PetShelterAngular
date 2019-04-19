@@ -1,0 +1,12 @@
+<h2>Details about {{onePet.name}}</h2>
+<button [routerLink]="['']">Home</button>
+
+<div>
+  <h4>Pet type: {{onePet.type}}</h4>
+  <h4>Description: {{onePet.description}}</h4>
+  <h4>Skills: {{onePet.skill1}},{{onePet.skill2}},{{onePet.skill3}}</h4>
+  <h4>Like: {{onePet.like_count}}</h4>
+  <button *ngIf="onePet.like_count == 0" (click)="onLike(onePet)"> Like Button</button>
+  <button (click)="delete(onePet)">Adopt this pet!</button>
+</div>
+

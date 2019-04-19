@@ -1,0 +1,9 @@
+.create{
+    width: 600px;
+    min-height: 200px;
+    border: 3px solid black;
+    padding: 20px;
+}
+span{
+    color:red;
+}

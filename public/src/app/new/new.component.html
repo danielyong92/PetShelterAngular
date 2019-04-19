@@ -1,0 +1,23 @@
+<h2>Know of a pet needing a home?</h2>
+
+<div class="create">
+  <form (submit)="onSubmit()">
+    <h4>Add Pet:</h4>
+    <!-- <p> {{ newPet | json }} </p> -->
+    <span>{{errmessage}}</span><br>
+    <span>{{errmessage2}}</span>
+    <span>{{errmessage3}}</span>
+    <p>Pet name: <input type="text" name="newPet.name" [(ngModel)]="newPet.name" class="form-control" /></p>
+    <p>Pet type: <input type="text" name="newPet.type" [(ngModel)]="newPet.type" class="form-control" /></p>
+    <p>Description: <input type="text" name="newPet.description" [(ngModel)]="newPet.description" class="form-control" /></p>
+    <p>Skill_1:<input type="text" name="newPet.skill1" [(ngModel)]="newPet.skill1" class="form-control" /></p>
+    <p>Skill_2:<input type="text" name="newPet.skill2" [(ngModel)]="newPet.skill2" class="form-control" /></p>
+    <p>Skill_3:<input type="text" name="newPet.skill3" [(ngModel)]="newPet.skill3" class="form-control" /></p>
+
+    <input type="submit" class="btn btn-primary" value="Add pet"><button [routerLink]="['']">Cancel</button>
+    <br>
+
+  </form>
+
+  <br>
+</div>
